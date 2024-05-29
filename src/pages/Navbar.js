@@ -1,20 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from "@fortawesome/free-solid-svg-icons/faMoon";
 
-function Navbar() {
-
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
-    const toggleTheme = () => {
-        setIsDarkMode(!isDarkMode);
-    };
+function Navbar({isDarkMode, toggleTheme}) {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} navbar-main`}>
             <div style={{display: 'flex'}}>
-                <img src={`${process.env.PUBLIC_URL}/img/avatar.jpg`} alt="Avatar" className="avatar"/>
+                {/* <img src={`${process.env.PUBLIC_URL}/img/avatar.jpg`} alt="Avatar" className="avatar"/> */}
             </div>
             <ul>
                 <a href="/"><li>About</li></a>

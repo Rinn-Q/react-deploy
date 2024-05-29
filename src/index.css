@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 .navbar {
-  @apply flex items-center justify-between px-4 py-5 bg-white border-b border-gray-200;
+  @apply flex items-center justify-between px-4 py-5 
+  border-b border-gray-200 shadow-md w-full
+  absolute top-0 z-50;
 }
 
-.navbar a {
-  @apply text-gray-700 hover:text-gray-900;
+.navbar a:hover {
+  @apply text-white;
+}
+
+.navbar a:hover {
+  @apply -translate-y-1
 }
 
 .navbar ul {
@@ -15,7 +21,7 @@
 }
 
 .navbar ul li{
-  @apply mr-4;
+  @apply mr-5 w-20 p-1 text-center rounded-lg shadow-lg;
 }
 
 .avatar {
