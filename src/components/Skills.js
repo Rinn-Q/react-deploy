@@ -9,7 +9,7 @@ function Skills({isDarkMode}) {
     return (
         <div className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} mt-3`}>
             <p className="text-2xl font-mono">Skills</p>
-            <div className="flex">
+            <div className="flex justify-center">
                 <Skill icon={faJs} text="Javascript" color="text-yellow-400"/>
                 <Skill icon={faReact} text="React" color="text-blue-400"/>
                 <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" text="C"/>
