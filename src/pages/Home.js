@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './About';
 
 function Home({ isDarkMode }) {
   return (
@@ -12,6 +13,7 @@ function Home({ isDarkMode }) {
           Contact Me
         </button>
       </div>
+      <About isDarkMode={isDarkMode}/>
     </div>
   );
 }
