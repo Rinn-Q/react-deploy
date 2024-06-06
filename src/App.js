@@ -15,16 +15,12 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme}/>
-      </div>
-      <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
-        <Routes>
-          <Route path='/' element={<Home isDarkMode={isDarkMode}/>} />
-          <Route path='/about' element={<About/>} />
-          <Route path="*" element={<Navigate to="/" /> } />
-        </Routes>
-      </div>
+      <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme}/>
+      <Routes>
+        <Route path='/' element={<Home isDarkMode={isDarkMode}/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path="*" element={<Navigate to="/" /> } />
+      </Routes>
     </Router>
   );
 }

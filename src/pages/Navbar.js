@@ -6,7 +6,7 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons/faMoon";
 function Navbar({isDarkMode, toggleTheme}) {
 
     return (
-        <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} navbar-main`}>
+        <nav className={`navbar ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
             <div style={{display: 'flex'}}>
                 {/* <img src={`${process.env.PUBLIC_URL}/img/avatar.jpg`} alt="Avatar" className="avatar"/> */}
             </div>
