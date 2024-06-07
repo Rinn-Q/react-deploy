@@ -1,23 +1,30 @@
 import React from "react";
-import Skill from "./Skill"
 import Skill2 from "./Skill2";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-// import {M}
 
 function Skills({isDarkMode}) {
     return (
-        <div className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} mt-3`}>
-            <p className="text-2xl font-mono">Skills</p>
-            <div className="flex justify-center">
-                <Skill icon={faJs} text="Javascript" color="text-yellow-400"/>
-                <Skill icon={faReact} text="React" color="text-blue-400"/>
+        <div className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} mt-3 w-full`}>
+            <p className="text-2xl font-mono w-full">Skills</p>
+            <div className="flex justify-center w-full items-center ">
                 <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" text="C"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" text="Java"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" text="HTML"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" text="CSS"/>
             </div>
             <div className="flex items-center">
-                <Skill icon={faJs} text="Javascript" color="text-yellow-400"/>
-                <Skill icon={faJs} text="Javascript" color="text-yellow-400"/>
-                <Skill icon={faJs} text="Javascript" color="text-yellow-400"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" text="Node"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" text="Express"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" text="MySQL"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" text="MongoDB"/>
+            </div>
+            <div className="flex items-center">
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" text="PostgreSQL"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" text="Next"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" text="React"/>
+                <Skill2 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" text="MUI"/>
+            </div>
+            <div className="flex items-center">
+                
             </div>
         </div>
     )
