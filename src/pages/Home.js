@@ -1,9 +1,11 @@
 import React from 'react';
 import About from './About';
+import Skills from '../components/Skills';
+import Experience from '../components/Experience'
 
 function Home({ isDarkMode }) {
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black m-0 w-full'} p-5`}>
       <div className='container mx-auto p-4 text-center pt-10'>
         <p className='block text-4xl font-bold'>
           I'M <span className='text-yellow-400'>Javkhlan</span>
@@ -14,6 +16,8 @@ function Home({ isDarkMode }) {
         </button>
       </div>
       <About isDarkMode={isDarkMode}/>
+      <Skills isDarkMode={isDarkMode}/>
+      <Experience isDarkMode={isDarkMode}/>
     </div>
   );
 }
