@@ -3,6 +3,7 @@ import About from './About';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience'
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 function Home({ isDarkMode }) {
   const contactRef = useRef(null); 
@@ -26,6 +27,7 @@ function Home({ isDarkMode }) {
       <Skills isDarkMode={isDarkMode}/>
       <Experience isDarkMode={isDarkMode}/>
       <Contact isDarkMode={isDarkMode} ref={contactRef}/>
+      <Footer isDarkMode={isDarkMode}/>
     </div>
   );
 }
