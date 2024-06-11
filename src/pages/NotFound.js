@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 
-function NotFound() {
-    return <div>Not Found</div>;
-}
+const ScrollAnimation = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-export default NotFound;
+  
+
+  return (
+    <div id="target-element" className={`transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <h1 className="text-4xl">Scroll to see me!</h1>
+    </div>
+  );
+};
+
+export default ScrollAnimation;

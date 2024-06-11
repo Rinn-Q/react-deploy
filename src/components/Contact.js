@@ -1,9 +1,29 @@
-import React , { forwardRef }from "react";
+import React , { forwardRef , useState , useEffect}from "react";
 import ContactSection from "./ContactSection";
 
 const Contact = forwardRef(( props, ref) => {
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+          const target = document.getElementById('target-element');
+    
+          if (target) {
+            const rect = target.getBoundingClientRect();
+            const isElementVisible = rect.top <= -10;
+            // console.log(rect.top + " --- " + window.innerHeight + " --- " + rect.bottom)
+    
+            if (isElementVisible) {
+              setIsVisible(true);
+            }
+          }
+        };
+        handleScroll();
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
     return (
-        <div ref={ref} className={`${props.isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+        <div ref={ref} className={`${props.isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} transition-opacity duration-1000 ${isVisible ? 'fadeInLeft' : 'opacity-0'}`}>
             <div className="flex items-center">
               <div className="flex-grow border-t border-gray-300"></div>
               <span className="mx-4 text-2xl font-mono">Contact Me</span>

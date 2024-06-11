@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
 .navbar {
   @apply flex items-center justify-between px-4 py-5 
   border-b border-gray-200 shadow-md w-full
