@@ -11,9 +11,9 @@ function Navbar({isDarkMode, toggleTheme}) {
                 {/* <img src={`${process.env.PUBLIC_URL}/img/avatar.jpg`} alt="Avatar" className="avatar"/> */}
             </div>
             <ul>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Portfolio</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="a"><li>About</li></a>
+                <a href="a"><li>Portfolio</li></a>
+                <a href="a"><li>Contact</li></a>
             </ul>
             <button onClick={toggleTheme} id="colorToggler" className="flex items-center ">
                 

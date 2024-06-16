@@ -85,3 +85,20 @@
 .btn-second:hover {
   @apply shadow-md -translate-y-1 transition-transform
 }
+
+@media (min-width: 500px) {
+  .timeline-horizontal {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .timeline-horizontal ol {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .timeline-horizontal li {
+    display: inline-block;
+    min-width: 200px; 
+  }
+}

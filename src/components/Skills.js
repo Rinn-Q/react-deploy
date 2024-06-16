@@ -36,7 +36,7 @@ function Skills({isDarkMode}) {
                 <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" text="Node"/>
                 <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" text="Express"/>
                 <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" text="MySQL"/>
-                <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" text="MongoDB"/>
+                <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" text="Mongo"/>
             </div>
             <div className={`flex items-center justify-around`}>
                 <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" text="Postgre"/>
