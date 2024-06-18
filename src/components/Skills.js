@@ -24,7 +24,7 @@ function Skills({isDarkMode}) {
       }, []);
 
     return (
-        <div id="target-element" className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} mt-3 w-full transition-opacity duration-1000 ${isVisible ? 'fadeInUp' : 'opacity-0'}`}>
+        <div id="target-element" className={`${isDarkMode ? ' text-white' : ' text-black'} mt-3 w-full transition-opacity duration-1000 ${isVisible ? 'fadeInUp' : 'opacity-0'}`}>
             <p className="text-2xl font-mono w-full">Skills</p>
             <div className="flex justify-around w-full items-center ">
                 <Skill2 isDarkMode={isDarkMode} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" text="C"/>

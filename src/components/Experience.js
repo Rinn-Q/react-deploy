@@ -30,7 +30,7 @@ function Experience({isDarkMode}) {
       // const width = 
       // console.log(width)
   return (
-    <div className={`timeline-horizontal ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} transition-opacity duration-1000 ${isVisible ? 'fadeInRight' : 'opacity-0'}`}>
+    <div className={`timeline-horizontal ${isDarkMode ? ' text-white' : ' text-black'} transition-opacity duration-1000 ${isVisible ? 'fadeInRight' : 'opacity-0'}`}>
       <h1 className='text-2xl font-mono'>Experience</h1>
       {
         window.innerWidth < 768 ? (

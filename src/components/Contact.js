@@ -23,7 +23,7 @@ const Contact = forwardRef(( props, ref) => {
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
     return (
-        <div ref={ref} className={`${props.isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'} transition-opacity duration-1000 ${isVisible ? 'fadeInLeft' : 'opacity-0'}`}>
+        <div ref={ref} className={`${props.isDarkMode ? ' text-white' : ' text-black'} transition-opacity duration-1000 ${isVisible ? 'fadeInLeft' : 'opacity-0'}`}>
             <div className="flex items-center">
               <div className="flex-grow border-t border-gray-300"></div>
               <span className="mx-4 text-2xl font-mono">Contact Me</span>

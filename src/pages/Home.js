@@ -85,7 +85,7 @@ function Home({ isDarkMode }) {
   };
   
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black m-0 w-full'} p-5`}>
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-white text-black m-0 w-full'} p-5`} style={isDarkMode ? { backgroundImage: `url('${process.env.PUBLIC_URL}/img/dark.jpg')` } : { backgroundImage: `url('${process.env.PUBLIC_URL}/img/white.jpg')` }}>
       <div className='container mx-auto p-4 text-center py-40'>
         <p className='block text-4xl font-bold'>
           I'M <span className='text-yellow-400'>Javkhlan</span>
